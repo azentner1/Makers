@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Markers</string>
+    <string name="comments">"%s comments"</string>
+    <string name="voted_posts">Voted Posts</string>
+    <string name="media">Media</string>
+    <string name="hunter">Hunter</string>
+    <string name="makers">Makers</string>
+    <string name="upvotes">%s upvotes</string>
+</resources>

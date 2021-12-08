@@ -1,0 +1,57 @@
+query post ($id: ID) {
+    post (id: $id) {
+        commentsCount
+        createdAt
+        description
+        featuredAt
+        id
+        isCollected
+        isVoted
+        makers {
+            coverImage
+            createdAt
+            headline
+            id
+            isFollowing
+            isMaker
+            isViewer
+            name
+            profileImage
+            twitterUsername
+            url
+            username
+            websiteUrl
+        }
+        media {
+            type
+            url
+        }
+        name
+        reviewsRating
+        slug
+        tagline
+        thumbnail {
+            type
+            url
+        }
+        url
+        user {
+            coverImage
+            createdAt
+            headline
+            id
+            isFollowing
+            isMaker
+            isViewer
+            name
+            profileImage
+            twitterUsername
+            url
+            username
+            websiteUrl
+        }
+        userId
+        votesCount
+        website
+    }
+}

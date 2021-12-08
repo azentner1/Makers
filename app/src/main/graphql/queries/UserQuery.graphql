@@ -1,0 +1,56 @@
+query UserQuery ($id: ID) {
+    user (id: $id) {
+        coverImage
+        createdAt
+        headline
+        id
+        isFollowing
+        isMaker
+        isViewer
+        name
+        profileImage
+        twitterUsername
+        url
+        username
+        votedPosts {
+            edges {
+                cursor
+                node {
+                    commentsCount
+                    id
+                    isCollected
+                    isVoted
+                    name
+                    reviewsRating
+                    tagline
+                    thumbnail {
+                        type
+                        url
+                    }
+                    topics {
+                        totalCount
+                    }
+                    url
+                    userId
+                    user {
+                        id
+                        username
+                    }
+                    votes {
+                        totalCount
+                    }
+                    votesCount
+                    website
+                }
+            }
+            pageInfo {
+                endCursor
+                hasNextPage
+                hasPreviousPage
+                startCursor
+            }
+            totalCount
+        }
+        websiteUrl
+    }
+}

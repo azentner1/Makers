@@ -1,0 +1,49 @@
+query GetPostsQuery ($postedAfter: DateTime) {
+    posts (postedAfter: $postedAfter) {
+        edges {
+            cursor
+            node {
+                commentsCount
+                createdAt
+                description
+                featuredAt
+                id
+                isCollected
+                isVoted
+                name
+                reviewsRating
+                slug
+                tagline
+                thumbnail {
+                    type
+                    url
+                }
+                url
+                user {
+                    coverImage
+                    createdAt
+                    headline
+                    id
+                    isFollowing
+                    isMaker
+                    isViewer
+                    name
+                    profileImage
+                    twitterUsername
+                    url
+                    username
+                }
+                userId
+                votesCount
+                website
+            }
+        }
+        pageInfo {
+            endCursor
+            hasNextPage
+            hasPreviousPage
+            startCursor
+        }
+        totalCount
+    }
+}
