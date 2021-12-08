@@ -1,4 +1,4 @@
-package com.the.markers.home
+package com.the.markers.home.viewmodel
 
 import androidx.lifecycle.Observer
 import androidx.lifecycle.viewModelScope
@@ -8,10 +8,8 @@ import com.the.markers.base.model.UiDataState
 import com.the.markers.features.home.HomeEvent
 import com.the.markers.features.home.HomeViewModel
 import com.the.markers.features.home.datasource.HomeDataSource
-import com.the.markers.features.home.datasource.HomeDataSourceImpl
 import com.the.markers.features.home.model.HomeData
 import com.the.markers.features.home.repository.HomeRepository
-import dagger.hilt.android.testing.BindValue
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import kotlinx.coroutines.launch
